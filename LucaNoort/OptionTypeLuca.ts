@@ -8,10 +8,11 @@ const None = <a>(): Option<a> => {
     return {kind: 'right', value: false}
 }
 
-function sumUptwo(n: number): number {
-    let sum = 0;
-    for(let i = 1; i < n; i++) {
-        sum++;
+const sumUpTwo = (n : number): number => {
+    let sum : number = 1
+    if(sum < n) {
+        sum = sum + 1
+        return sumUpTwo(sum)
     }
-    return sum;
+    return(sum)
 }
