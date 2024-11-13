@@ -7,3 +7,11 @@ const Some = <a>(v: a): Option<a> => {
 const None = <a>(): Option<a> => {
     return {kind: 'right', value: false}
 }
+
+function sumUptwo(n: number): number {
+    let sum = 0;
+    for(let i = 1; i < n; i++) {
+        sum++;
+    }
+    return sum;
+}
